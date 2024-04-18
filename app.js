@@ -23,7 +23,7 @@ function BtnClicked(e) {
             box.forEach(box => box.removeEventListener('click', BtnClicked)) // Disable further moves
             return; 
         }
-        currentPlayer = currentPlayer == player1 ? player2 : player1
+        currentPlayer = currentPlayer === player1 ? player2 : player1
     }
 }
 
@@ -42,7 +42,7 @@ function winningPlayer() {
     for (const combination of combo) {
         let [a, b, c] = combination
 
-        if (spaces[a] && (spaces[a] == spaces[b] && spaces[a] == spaces[c])) {
+        if (spaces[a] && (spaces[a] === spaces[b] && spaces[a] === spaces[c])) {
             return [a, b, c]
 
         }
