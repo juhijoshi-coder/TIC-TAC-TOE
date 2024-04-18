@@ -64,7 +64,7 @@ button:focus {
     background-color: #191825;
 }
 
-#gameboard {
+#game-board {
     width: 300px;
     display: flex;
     flex-wrap: wrap;
